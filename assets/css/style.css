@@ -1,0 +1,91 @@
+@import url('https://unpkg.com/aos@2.3.1/dist/aos.css');
+
+:root {
+  --primary-color: #3B82F6;
+  --secondary-color: #4B5563;
+  --accent-color: #14B8A6;
+  --background-color-light: #F9FAFB;
+  --background-color-dark: #111827;
+  --text-color-light: #F9FAFB;
+  --text-color-dark: #111827;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color-light);
+    color: var(--text-color-dark);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark mode styles */
+body.dark {
+    background-color: var(--background-color-dark);
+    color: var(--text-color-light);
+}
+
+/* Update header style */
+header {
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+body.dark header {
+    background-color: #1F2937; /* gray-800 */
+    border-bottom: 1px solid #374151; /* gray-700 */
+}
+
+/* Update hero section */
+.hero-section {
+    background: linear-gradient(to right, #3B82F6, #8B5CF6); /* blue-500 to purple-500 */
+}
+
+/* Update project cards */
+.project-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+body.dark .project-card {
+    background-color: #1F2937; /* gray-800 */
+}
+
+/* Update skills section */
+.skill-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+body.dark .skill-card {
+    background-color: #1F2937; /* gray-800 */
+}
+
+/* Dark mode toggle button */
+.dark-mode-toggle {
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 9999px;
+    background-color: #F3F4F6; /* gray-100 */
+    color: #1F2937; /* gray-800 */
+    margin-left: 1rem;
+}
+
+body.dark .dark-mode-toggle {
+    background-color: #374151; /* gray-700 */
+    color: #F9FAFB; /* gray-50 */
+}
