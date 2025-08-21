@@ -5,20 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>B.MADHANKUMAR | MK</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
 </head>
 <body class="bg-gray-100 text-gray-900 font-sans">
   <!-- Navbar -->
   <header class="bg-white shadow-md fixed w-full top-0 left-0 z-50">
-    <nav class="container mx-auto flex justify-between items-center py-4 px-6">
+    <nav class="container mx-auto flex justify-between items-center py-4 px-6 max-w-7xl">
       <h1 class="text-xl font-bold text-lightcyan-600">B.Madhankumar MK</h1>
-      <ul class="flex space-x-6">
-        <li><a href="#about" class="hover:text-blue-600 transition">About</a></li>
-        <li><a href="#education" class="hover:text-blue-600 transition">Education</a></li>
-        <li><a href="#projects" class="hover:text-blue-600 transition">Projects</a></li>
-        <li><a href="#skills" class="hover:text-blue-600 transition">Skills</a></li>
-        <li><a href="#contact" class="hover:text-blue-600 transition">Contact</a></li>
-      </ul>
+      <div class="flex items-center">
+        <ul class="flex space-x-6">
+          <li><a href="#about" class="hover:text-blue-600 transition">About</a></li>
+          <li><a href="#education" class="hover:text-blue-600 transition">Education</a></li>
+          <li><a href="#projects" class="hover:text-blue-600 transition">Projects</a></li>
+          <li><a href="#skills" class="hover:text-blue-600 transition">Skills</a></li>
+          <li><a href="#contact" class="hover:text-blue-600 transition">Contact</a></li>
+        </ul>
+        <button id="darkModeToggle" class="dark-mode-toggle">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+          </svg>
+        </button>
+      </div>
     </nav>
   </header>
 
@@ -33,18 +43,20 @@
   </section>
 
   <!-- About Section -->
-  <section id="about" class="container mx-auto py-20 px-6" data-aos="fade-right">
-    <h3 class="text-3xl font-bold mb-6 text-center">About Me</h3>
-    <p class="text-center max-w-2xl mx-auto">
-      To obtain an entry-level position in a reputed hardware company where I can apply my academic
-      knowledge in electronics and hardware systems, learn from experienced professionals, and grow
-      as a skilled engineer.
-    </p>
+  <section id="about" class="py-20 px-6" data-aos="fade-right">
+    <div class="container mx-auto max-w-7xl">
+      <h3 class="text-3xl font-bold mb-6 text-center">About Me</h3>
+      <p class="text-center max-w-2xl mx-auto">
+        To obtain an entry-level position in a reputed hardware company where I can apply my academic
+        knowledge in electronics and hardware systems, learn from experienced professionals, and grow
+        as a skilled engineer.
+      </p>
+    </div>
   </section>
 
   <!-- Education Section -->
-  <section id="education" class="bg-gray-200 py-20" data-aos="zoom-in">
-    <div class="container mx-auto px-6">
+  <section id="education" class="bg-gray-200 py-20 px-6" data-aos="zoom-in">
+    <div class="container mx-auto max-w-7xl">
       <h3 class="text-3xl font-bold mb-10 text-center">Education</h3>
       <div class="space-y-6">
         <div class="bg-white p-6 rounded-lg shadow-md">
@@ -64,9 +76,10 @@
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="container mx-auto py-20 px-6">
-    <h3 class="text-3xl font-bold mb-10 text-center" data-aos="fade-up">Projects</h3>
-    <div class="grid md:grid-cols-2 gap-8">
+  <section id="projects" class="py-20 px-6">
+    <div class="container mx-auto max-w-7xl">
+      <h3 class="text-3xl font-bold mb-10 text-center" data-aos="fade-up">Projects</h3>
+      <div class="grid md:grid-cols-2 gap-12">
       <!-- Project 1 -->
       <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:scale-105 transition" data-aos="flip-left">
         <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="Smart Gloves Project" class="w-full h-48 object-cover">
@@ -89,10 +102,10 @@
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="bg-gray-200 py-20" data-aos="zoom-in">
-    <div class="container mx-auto px-6">
+  <section id="skills" class="bg-gray-200 py-20 px-6" data-aos="zoom-in">
+    <div class="container mx-auto max-w-7xl">
       <h3 class="text-3xl font-bold mb-10 text-center">Skills</h3>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center justify-center">
         <div class="bg-white p-6 rounded-lg shadow-md hover:scale-110 transition">HTML, CSS</div>
         <div class="bg-white p-6 rounded-lg shadow-md hover:scale-110 transition">C, C++</div>
         <div class="bg-white p-6 rounded-lg shadow-md hover:scale-110 transition">Embedded system, Tinkercad</div>
@@ -102,16 +115,48 @@
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="bg-gray-900 text-white py-20" data-aos="fade-up">
-    <div class="container mx-auto px-6 text-center">
+  <section id="contact" class="bg-gray-900 text-white py-20 px-6" data-aos="fade-up">
+    <div class="container mx-auto max-w-7xl text-center">
       <h3 class="text-3xl font-bold mb-6">Contact Me</h3>
-      <p class="mb-4">📞 Phone: <a href="tel:+919344071284" class="text-blue-400 hover:underline">+91 9751987380</a></p>
-      <p class="mb-4">📧 Email: <a href="mailto:ssgowtham413@gmail.com" class="text-blue-400 hover:underline">madhanbala989@gmail.com</a></p>
-      <p class="mb-4">🔗 LinkedIn: <a href="https://www.linkedin.com/in/gowtham-s-6505a0298" target="_blank" class="text-blue-400 hover:underline">linkedin.com/in/gowtham-s-6505a0298</a></p>
-      <p class="mb-6">💻 GitHub: <a href="https://github.com/Gowthamsk01" target="_blank" class="text-blue-400 hover:underline">github.com/Gowthamsk01</a></p>
-      <a href="Gowtham_Resume.pdf" download class="bg-blue-500 px-6 py-3 rounded-full hover:bg-blue-400 transition transform hover:scale-110">Download Resume</a>
+      <form action="https://formspree.io/f/your_form_id" method="POST" class="max-w-xl mx-auto">
+        <div class="mb-4">
+          <label for="name" class="block text-white text-sm font-bold mb-2">Name</label>
+          <input type="text" name="name" id="name" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-white text-sm font-bold mb-2">Email</label>
+          <input type="email" name="email" id="email" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required>
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-white text-sm font-bold mb-2">Message</label>
+          <textarea name="message" id="message" rows="4" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" required></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
+            Send Message
+          </button>
+        </div>
+      </form>
+      <p class="text-center text-gray-400 text-xs mt-4">
+        Note: Replace the form action URL with your own Formspree URL.
+      </p>
+      <div class="mt-8">
+        <p class="mb-4">Or contact me directly:</p>
+        <p class="mb-4">📞 Phone: <a href="tel:+919751987380" class="text-blue-400 hover:underline">+91 9751987380</a></p>
+        <p class="mb-4">📧 Email: <a href="mailto:madhanbala989@gmail.com" class="text-blue-400 hover:underline">madhanbala989@gmail.com</a></p>
+        <p class="mb-4">🔗 LinkedIn: <a href="https://www.linkedin.com/in/gowtham-s-6505a0298" target="_blank" class="text-blue-400 hover:underline">linkedin.com/in/gowtham-s-6505a0298</a></p>
+        <p class="mb-6">💻 GitHub: <a href="https://github.com/Gowthamsk01" target="_blank" class="text-blue-400 hover:underline">github.com/Gowthamsk01</a></p>
+        <a href="Gowtham_Resume.pdf" download class="bg-blue-500 px-6 py-3 rounded-full hover:bg-blue-400 transition transform hover:scale-110">Download Resume</a>
+      </div>
     </div>
   </section>
+
+  <!-- Back to Top Button -->
+  <button id="backToTopBtn" class="fixed bottom-5 right-5 bg-blue-500 text-white p-3 rounded-full shadow-lg hidden">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+    </svg>
+  </button>
 
   <!-- Footer -->
   <footer class="bg-gray-800 text-center text-gray-400 py-6">
@@ -120,11 +165,6 @@
 
   <!-- AOS JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 1200,
-      once: true
-    });
-  </script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
