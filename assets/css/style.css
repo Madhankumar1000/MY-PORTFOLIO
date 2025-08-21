@@ -90,6 +90,21 @@ body.dark .dark-mode-toggle {
     color: #F9FAFB; /* gray-50 */
 }
 
+body.dark #education {
+    background-color: #1F2937; /* gray-800 */
+}
+
+body.dark #education .bg-white {
+    background-color: #374151; /* gray-700 */
+}
+
+body.dark #contact input,
+body.dark #contact textarea {
+    background-color: #374151; /* gray-700 */
+    color: var(--text-color-light);
+    border-color: #4B5563; /* gray-600 */
+}
+
 .grid-item {
     width: 100%;
     padding: 0.5rem;
@@ -99,4 +114,13 @@ body.dark .dark-mode-toggle {
     .grid-item {
         width: 50%;
     }
+}
+
+body.dark .project-card h4,
+body.dark .project-card p {
+    color: var(--text-color-light);
+}
+
+body.dark .skill-card {
+    color: var(--text-color-light);
 }
